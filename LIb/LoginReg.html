@@ -10,50 +10,99 @@
 
     <!-- Custom Styles -->
     <style>
+        /* Background Image Styling */
         body {
-            background-color: #f8f9fa;
+            background: url('https://wallpaperaccess.com/full/253418.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
+
+        /* App Name Styling */
+        .app-name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Transparent Container Styling */
         .container {
             max-width: 400px;
-            margin-top: 50px;
-            background: white;
+            margin-top: 80px;
+            background: rgba(0, 0, 0, 0.7); /* Transparent Black */
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: white;
+            backdrop-filter: blur(5px); /* Blur effect */
         }
+
+        /* Input Field Styling */
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Tab Styling */
         .nav-tabs {
             display: flex;
             justify-content: center;
+            border-bottom: none;
         }
+
         .nav-tabs .nav-item {
             width: 50%;
             text-align: center;
         }
+
         .nav-tabs .nav-link {
             width: 100%;
             border: none;
             font-size: 18px;
             padding: 10px;
             cursor: pointer;
+            color: white;
+            background: transparent;
+            border-radius: 5px;
         }
+
         .nav-tabs .nav-link.active {
             background: #007bff;
             color: white;
         }
+
+        /* Form Styling */
         .form-container {
             display: none;
         }
+
         .form-container.active {
             display: block;
         }
+
+        /* Button Styling */
         .btn-custom {
             width: 100%;
             font-size: 18px;
             padding: 10px;
         }
+
+        /* Link Styling */
+        a {
+            color: #f8f9fa;
+        }
     </style>
 </head>
 <body>
+
+<!-- App Name in Upper Left Corner -->
+<div class="app-name">Online Library Management</div>
 
 <div class="container">
     <ul class="nav nav-tabs">
